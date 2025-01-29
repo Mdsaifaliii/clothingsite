@@ -13,7 +13,7 @@ const ProductCard = ({ id, image, name, price, rating, description }) => (
         ))}
       </div>
       <p className="text-gray-600 mb-2">{description}</p>
-      <p className="text-gray-800 font-bold mb-4">${price}</p>
+      <p className="text-gray-800 font-bold mb-4">₹{price}</p>
       <Link
         to={`/product/${id}`}
         className="bg-black text-white py-2 px-4 rounded-md hover:bg-gray-700 block text-center"

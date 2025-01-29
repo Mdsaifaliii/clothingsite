@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <nav className="bg-black text-white sticky top-0 z-50 shadow-lg">
       <div className="container mx-auto flex justify-between items-center p-4">
-        <Link to="/" className="text-2xl font-extrabold hover:text-yellow-300">Clothing Store</Link>
+        <Link to="/" className="text-2xl font-extrabold hover:text-yellow-300">Wearluxe</Link>
         <div className="relative hidden md:block">
           <input
             type="text"
@@ -18,7 +18,7 @@ const Navbar = () => {
         </div>
         <div className="flex space-x-4 items-center">
           <Link to="/cart" className="relative">
-            <span className="material-icons">shopping_cart</span>
+            <span className="material-icons">shopping cart</span>
             <span className="absolute -top-2 -right-2 bg-red-500 text-xs rounded-full w-5 h-5 flex items-center justify-center">
               3
             </span>
@@ -38,7 +38,6 @@ const Navbar = () => {
           <li><Link to="/products" className="hover:text-yellow-300 block px-4 py-2 md:py-0">Products</Link></li>
           <li><Link to="/about" className="hover:text-yellow-300 block px-4 py-2 md:py-0">About</Link></li>
           <li><Link to="/contact" className="hover:text-yellow-300 block px-4 py-2 md:py-0">Contact</Link></li>
-          <li><Link to="/faq" className="hover:text-yellow-300 block px-4 py-2 md:py-0">FAQ</Link></li>
           <li><Link to="/services" className="hover:text-yellow-300 block px-4 py-2 md:py-0">Services</Link></li>
           <li><Link to="/timeline" className="hover:text-yellow-300 block px-4 py-2 md:py-0">Timeline</Link></li>
         </ul>

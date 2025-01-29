@@ -12,6 +12,7 @@ import HeroCarousel from './components/HeroBanner';
 import Timeline from './components/Timeline';
 import Services from './pages/Services';
 import ProductDetails from './pages/ProductDetails';
+import Cart from './components/Cart';
 
 function App() {
   return (
@@ -32,6 +33,9 @@ function App() {
           <Route path="/timeline" element={<Timeline />} />
           <Route path="/services" element={<Services />} />
           <Route path="/productdetails/:id" element={<ProductDetails />} />
+          <Route path="/cart" element={<Cart />} />
+      
+          
           
 
 

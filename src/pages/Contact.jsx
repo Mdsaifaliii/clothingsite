@@ -14,9 +14,9 @@ const Contact = () => (
           <div className="p-6 bg-white rounded shadow-lg">
             <h2 className="text-2xl font-semibold text-gray-800 mb-4">Get in Touch</h2>
             <ul className="space-y-4">
-              <li><strong>Email:</strong> <a href="mailto:support@clothingstore.com" className="text-blue-500">support@clothingstore.com</a></li>
-              <li><strong>Phone:</strong> <span className="text-gray-600">+123 456 7890</span></li>
-              <li><strong>Address:</strong> <span className="text-gray-600">123 Fashion Street, New York, NY 10001</span></li>
+              <li><strong>Email:</strong> <a href="mailto:support@clothingstore.com" className="text-blue-500">support@Wearluxe.com</a></li>
+              <li><strong>Phone:</strong> <span className="text-gray-600">+91 9883747327</span></li>
+              <li><strong>Address:</strong> <span className="text-gray-600">123 Fashion Street, India, IN 10001</span></li>
             </ul>
           </div>
 

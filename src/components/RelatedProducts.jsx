@@ -27,7 +27,7 @@ const RelatedProducts = ({ products }) => {
                   />
                 ))}
               </div>
-              <p className="text-gray-800 font-bold">${product.price}</p>
+              <p className="text-gray-800 font-bold">₹{product.price}</p>
             </Link>
           </div>
         ))}

@@ -24,11 +24,11 @@ const TermsOfService = () => (
 
     <h2 className="text-2xl font-semibold mt-6 mb-4">Limitation of Liability</h2>
     <p className="mb-4">
-      Clothing Store is not responsible for any indirect, incidental, or consequential damages arising from your use of our website.
+      Wearluxe is not responsible for any indirect, incidental, or consequential damages arising from your use of our website.
     </p>
 
     <p className="mt-6">
-      If you have any questions about these terms, contact us at <span className="text-yellow-400">support@clothingstore.com</span>.
+      If you have any questions about these terms, contact us at <span className="text-yellow-400">support@Wearluxe.com</span>.
     </p>
   </div>
 );

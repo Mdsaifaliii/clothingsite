@@ -63,7 +63,7 @@ const Footer = () => (
       <div>
         <h3 className="text-lg font-bold text-yellow-400 mb-4">Contact</h3>
         <p className="mb-2">
-          Email: <span className="text-yellow-300">support@clothingstore.com</span>
+          Email: <span className="text-yellow-300">support@Wearluxe.com</span>
         </p>
         <p>
           Phone: <span className="text-yellow-300">+123 456 7890</span>
@@ -75,7 +75,7 @@ const Footer = () => (
     <div className="border-t border-gray-700 mt-8 pt-6">
       <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between space-y-4 lg:space-y-0">
         <p className="text-sm text-gray-400">
-          © {new Date().getFullYear()} Clothing Store. All rights reserved.
+          © {new Date().getFullYear()} Wearluxe. All rights reserved.
         </p>
         <form className="flex">
           <input
@@ -84,7 +84,7 @@ const Footer = () => (
             className="p-2 rounded-l-md bg-gray-800 text-white focus:ring-2 focus:ring-yellow-400"
           />
           <button className="p-2 bg-yellow-400 hover:bg-yellow-500 rounded-r-md text-black">
-            Subscribe
+            Send
           </button>
         </form>
       </div>
