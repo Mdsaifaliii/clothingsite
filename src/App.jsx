@@ -13,12 +13,11 @@ import Timeline from './components/Timeline';
 import Services from './pages/Services';
 import ProductDetails from './pages/ProductDetails';
 import Cart from './components/Cart';
-import CartProvider from "./context/CartContext";
-  // ✅ Import the provider
+import { CartProvider } from './context/CartContext';  // Correct import for CartProvider
 
 function App() {
   return (
-    <CartProvider>  {/* ✅ Wrap everything inside CartProvider */}
+    <CartProvider> {/*Wrap everything inside CartProvider */}
       <Router>
         <Navbar />
         <div className="min-h-screen">
@@ -39,6 +38,9 @@ function App() {
             {/* Product Details & Cart */}
             <Route path="/product/:id" element={<ProductDetails />} />
             <Route path="/cart" element={<Cart />} />
+
+            {/* 404 - Not Found Page */}
+            <Route path="*" element={<div>404 Page Not Found</div>} />
           </Routes>
         </div>
         <Footer />
