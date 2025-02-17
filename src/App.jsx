@@ -13,38 +13,37 @@ import Timeline from './components/Timeline';
 import Services from './pages/Services';
 import ProductDetails from './pages/ProductDetails';
 import Cart from './components/Cart';
+import CartProvider from "./context/CartContext";
+  // ✅ Import the provider
 
 function App() {
   return (
-    <Router>
-      <Navbar />
-      <div className="min-h-screen">
-        <Routes>
-          {/* Main Pages */}
-          <Route path="/" element={<Home />} />
-          <Route path="/products" element={<Products />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/privacy" element={<Privacy />} />
-          <Route path="/terms" element={<Terms />} />
+    <CartProvider>  {/* ✅ Wrap everything inside CartProvider */}
+      <Router>
+        <Navbar />
+        <div className="min-h-screen">
+          <Routes>
+            {/* Main Pages */}
+            <Route path="/" element={<Home />} />
+            <Route path="/products" element={<Products />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/privacy" element={<Privacy />} />
+            <Route path="/terms" element={<Terms />} />
 
-          {/* Hero Section and Additional Components */}
-          <Route path="/herobanner" element={<HeroCarousel />} />
-          <Route path="/timeline" element={<Timeline />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/productdetails/:id" element={<ProductDetails />} />
-          <Route path="/cart" element={<Cart />} />
-      
-          
-          
+            {/* Additional Components */}
+            <Route path="/herobanner" element={<HeroCarousel />} />
+            <Route path="/timeline" element={<Timeline />} />
+            <Route path="/services" element={<Services />} />
 
-
-          {/* Product Details */}
-          <Route path="/product/:id" element={<ProductDetails />} />
-        </Routes>
-      </div>
-      <Footer />
-    </Router>
+            {/* Product Details & Cart */}
+            <Route path="/product/:id" element={<ProductDetails />} />
+            <Route path="/cart" element={<Cart />} />
+          </Routes>
+        </div>
+        <Footer />
+      </Router>
+    </CartProvider>
   );
 }
 
